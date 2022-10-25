@@ -6,10 +6,10 @@ import Date20 from "../../../assets/images/Date (1).png";
 
 const Events = () => {
   return (
-    <section className="flex flex-col items-center justify-center bg-slate-500">
-      <div className="">
-        <h1 className="text-white font-Poppins-SemiBold">UPCOMING EVENTS</h1>
-        <p className="text-white font-Poppins-Regular font-[16px]">
+    <section className="flex flex-col items-center justify-center pb-14 pt-28 bg-slate-500">
+      <div className=" mb-8 ">
+        <h1 className="text-white font-Poppins-SemiBold text-6xl text-center ">UPCOMING EVENTS</h1>
+        <p className="text-white text-center font-Poppins-Regular font-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus nulla
           praesent sem
           <br /> morbi risus at. At etiam molestie vel cras. Mattis lectus lorem
@@ -17,58 +17,60 @@ const Events = () => {
         </p>
       </div>
       <div className="flex">
-        <div className="w-[546px] h-[425px] bg-white">
-          <img src={Date28} alt="date" />
-          <img src={flier1} alt="date" />
-          <div>
-            <p>
+        <div className="w-[546px]  bg-white">
+          <div className=" relative w-full h-[214px] " > 
+            <img src={Date28} className="absolute top-[17px] left-5"  alt="date" />
+            <img src={flier1} className="w-full h-full object-cover " alt="date" />
+          </div>
+          <div className=" p-4 " >
+            <p className=" font-Poppins-Bold text-[16px] ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              <br /> laoreet a sit habitasse maecenas nec scelerisque. Consequat
+               laoreet a sit habitasse maecenas nec scelerisque. Consequat
               tempor.
             </p>
-            <br />
-            <p className="font-[12px] font-Poppins-Regular">
+
+            <p className="text-[14px] mt-2 font-Poppins-Regular">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
               nisl et ultricies ullamcorper pretium faucibus dictum. Convallis
               nullam ultricies
-              <br /> ultrices faucibus. Sit
-              <br /> pellentesque amet ut odio nam sit id turpis sed. Aliquet
+               ultrices faucibus. Sit
+               pellentesque amet ut odio nam sit id turpis sed. Aliquet
               ipsum tellus lacus risus, arcu
-              <br />
+
               tristique id sit a.
-              <br /> Bibendum amet in aenean lacus, quis viverra mus. Cursus
+               Bibendum amet in aenean lacus, quis viverra mus. Cursus
               pulvinar aliquet dui enim
-              <br /> eget sem at sed. Faucibus at in congue aliquam. Tortor,
+               eget sem at sed. Faucibus at in congue aliquam. Tortor,
               cras dignissim integer egestas
-              <br /> nam eu. Mollis bibendum pharetra condimentum iaculis enim
+               nam eu. Mollis bibendum pharetra condimentum iaculis enim
               neque eu tincidunt.{" "}
             </p>
           </div>
         </div>
-        <div className="w-[546px] h-[425px] bg-white mx-5 relative">
-          <img src={Date20} alt="" className="absolute" />
-          <img src={flier2} alt="" />
-          <div>
-            <p>
+        <div className="w-[546px]  bg-white mx-5 relative">
+          <div> 
+            <img src={Date20} alt="" className="absolute  top-[17px] left-5" />
+            <img src={flier2} alt="" className="w-full h-full object-cover "  />
+          </div>
+          <div className=" p-4 " >
+            <p className=" font-Poppins-Bold text-[16px] " >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              <br /> laoreet a sit habitasse maecenas nec scelerisque. Consequat
+              laoreet a sit habitasse maecenas nec scelerisque. Consequat
               tempor.
-            </p>
-            <br />
-            <p className="font-[12px] font-Poppins-Regular">
+            </p> 
+            <p className="text-[14px] mt-2 font-Poppins-Regular">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
               nisl et ultricies ullamcorper pretium faucibus dictum. Convallis
               nullam ultricies
-              <br /> ultrices faucibus. Sit
-              <br /> pellentesque amet ut odio nam sit id turpis sed. Aliquet
+              ultrices faucibus. Sit
+              pellentesque amet ut odio nam sit id turpis sed. Aliquet
               ipsum tellus lacus risus, arcu
-              <br />
-              tristique id sit a.
-              <br /> Bibendum amet in aenean lacus, quis viverra mus. Cursus
+                            tristique id sit a.
+              Bibendum amet in aenean lacus, quis viverra mus. Cursus
               pulvinar aliquet dui enim
-              <br /> eget sem at sed. Faucibus at in congue aliquam. Tortor,
+              eget sem at sed. Faucibus at in congue aliquam. Tortor,
               cras dignissim integer egestas
-              <br /> nam eu. Mollis bibendum pharetra condimentum iaculis enim
+              nam eu. Mollis bibendum pharetra condimentum iaculis enim
               neque eu tincidunt.{" "}
             </p>
           </div>

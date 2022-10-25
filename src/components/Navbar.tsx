@@ -4,7 +4,7 @@ import Logo from "../assets/images/gwe logo 1.png";
 const Navbar = () => {
   return (
     <div>
-      <nav className="container absolute top-0 text-white flex py-6 text-[15px] items-center justify-around">
+      <nav className=" absolute left-0 right-0 top-0 w-full text-white flex py-6 text-[15px] items-center justify-around">
         <div className="mx-10">
           <img src={Logo} alt="logo" />
         </div>

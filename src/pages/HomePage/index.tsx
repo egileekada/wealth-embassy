@@ -5,6 +5,7 @@ import dove from "../../assets/images/dove 1.png";
 import UpcomingEvents from "./components/UpcomingEvents";
 import GiveSection from "./components/GiveSection";
 import Events from "./components/Events";
+import SecondSection from "./components/SecondSection";
 export default function Index() {
   return (
     <header>
@@ -15,8 +16,8 @@ export default function Index() {
           alt="backgroundImage"
           className=" w-full flex flex-col h-full justify-center items-center"
         />
-        <div className="absolute bottom-80 flex items-center justify-center flex-col left-80">
-          <div>
+        <div className="absolute flex items-center justify-center flex-col inset-0 ">
+          <div> 
             <img src={dove} alt="dove" className="my-4" />
           </div>
           <div>
@@ -45,8 +46,9 @@ export default function Index() {
             </button>
           </div>
         </div>
-      </div>
       <UpcomingEvents />
+      </div>
+      <SecondSection />
       <GiveSection />
       <Events />
     </header>
