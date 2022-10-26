@@ -4,16 +4,12 @@ import Phone from "../assets/images/Vector.png";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="flex items-center justify-around">
-        <div>
-          <div>
-            <img src={Logo} alt="logo" className="w-[148px] h-auto" />
-          </div>
-        </div>
+    <footer className=" w-full pt-[105px]  " >
+      <div className="flex justify-around pb-[42px]  "> 
+          <img src={Logo} alt="logo" className="w-[148px] my-auto h-auto" /> 
         <div>
           <h4 className="font-Poppins-Medium text-[24px]">Address</h4>
-          <p className="font-Poppins-Regular text-[14px] w-[318px] h-[232px] mt-2 leading-5">
+          <p className="font-Poppins-Regular text-justify text-[14px] w-[318px] h-[232px] mt-2 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget
             rhoncus volutpat faucibus enim vitae ac egestas. Nisl a vitae ornare
             dictum a ut purus felis. Est id odio at ac in elementum non. Est
@@ -26,28 +22,28 @@ const Footer = () => {
         </div>
         <div>
           <h4 className="font-Poppins-Medium text-[24px]">Main Links</h4>
-          <ul className="mt-2">
+          <ul className="mt-2 text-sm ">
             <li>Home</li>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Event</li>
-            <li>Contact</li>
+            <li className=" my-3 " >About</li>
+            <li className=" my-3 " >Gallery</li>
+            <li className=" my-3 " >Event</li>
+            <li className=" my-3 " >Contact</li>
           </ul>
         </div>
         <div>
           <h4 className="font-Poppins-Medium text-[24px]">Contact</h4>
           <ul>
-            <li>addressline xxxxxxxxxxxxxxx</li>
-            <li>addressline xxxxxxxxxxxxxxx</li>
-            <li>addressline xxxxxxxxxxxxxxx</li>
+            <li className=" text-sm my-3 " >addressline xxxxxxxxxxxxxxx</li>
+            <li className=" text-sm my-3 " >addressline xxxxxxxxxxxxxxx</li>
+            <li className=" text-sm my-3 " >addressline xxxxxxxxxxxxxxx</li>
           </ul>
-          <div className="flex items-center">
+          <div className="flex items-center mb-3">
             <div>
               <img src={Phone} alt="phone" />
             </div>
-            <div className="flex flex-col">
-              <p className="font-Poppins-Medium text-[15px]">+2349077601790</p>
-              <p className="font-Poppins-Medium text-[15px]">+2349067543521</p>
+            <div className="flex flex-col ml-4">
+              <p className="font-Poppins-Medium mb-2 text-sm ">+2349077601790</p>
+              <p className="font-Poppins-Medium text-sm ">+2349067543521</p>
             </div>
           </div>
           <p className="font-Poppins-Regular text-[13px] leading-4">
@@ -57,8 +53,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#B83A3A] text-white font-Poppins-Regular text-center p-6">
-        Designed by <span className="font-Poppins-Semibold">ICOWEB AGENCY</span>
+      <div className="bg-[#B83A3A] text-white font-Poppins-Regular text-sm text-center py-3">
+        Designed by <span className="font-Poppins-SemiBold">ICOWEB AGENCY</span>
       </div>
     </footer>
   );
