@@ -23,6 +23,26 @@
 } 
 
 @font-face {
-  font-family: 'Poppins-Regular';
-  src: url("../src/assets/fonts/Poppins-Regular.ttf")
+  font-family: 'Lora-Regular';
+  src: url("../src/assets/fonts/Lora-Regular.ttf")
+} 
+
+@font-face {
+  font-family: 'Lora-Medium';
+  src: url("../src/assets/fonts/Lora-Medium.ttf")
+} 
+
+@font-face {
+  font-family: 'Lora-Bold';
+  src: url("../src/assets/fonts/Lora-Bold.ttf")
+} 
+
+@font-face {
+  font-family: 'Lora-SemiBold';
+  src: url("../src/assets/fonts/Lora-SemiBold.ttf")
+}  
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url("../src/assets/fonts/Poppins-Medium.ttf")
 } 
