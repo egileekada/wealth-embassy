@@ -18,6 +18,6 @@ export default function Index() {
     ]
 
     return (
-        <div>index</div>
+        <div className=' font-Lora-Medium ' >index</div>
     )
 } 
