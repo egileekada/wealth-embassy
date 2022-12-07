@@ -1,12 +1,12 @@
 import React from "react";
-import UpcomingEvents from "../HomePage/components/UpcomingEvents";
 import Navbar from "../../components/Navbar";
+import UpcomingEvents from "../HomePage/components/UpcomingEvents";
 import backgroundImage from "../../assets/images/Background Image.png";
 import dove from "../../assets/images/dove 1.png";
-import Sermons from "./components/Sermons";
 import Footer from "../../components/Footer";
+import Form from "./components/Form";
 
-const sermonpage = () => {
+const index = () => {
   return (
     <section>
       <div className="relative">
@@ -48,10 +48,10 @@ const sermonpage = () => {
         </div>
         <UpcomingEvents />
       </div>
-      <Sermons />
+      <Form />
       <Footer />
     </section>
   );
 };
 
-export default sermonpage;
+export default index;

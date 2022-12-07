@@ -3,44 +3,44 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Poppins-ExtraBold';
-  src: url("../src/assets/fonts/Poppins-ExtraBold.ttf")
-} 
+  font-family: "Poppins-ExtraBold";
+  src: url("../src/assets/fonts/Poppins-ExtraBold.ttf");
+}
 
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: url("../src/assets/fonts/Poppins-Bold.ttf")
-} 
+  font-family: "Poppins-Bold";
+  src: url("../src/assets/fonts/Poppins-Bold.ttf");
+}
 
 @font-face {
-  font-family: 'Poppins-SemiBold';
-  src: url("../src/assets/fonts/Poppins-SemiBold.ttf")
-}  
+  font-family: "Poppins-SemiBold";
+  src: url("../src/assets/fonts/Poppins-SemiBold.ttf");
+}
 
 @font-face {
-  font-family: 'Poppins-Medium';
-  src: url("../src/assets/fonts/Poppins-Medium.ttf")
-} 
+  font-family: "Poppins-Medium";
+  src: url("../src/assets/fonts/Poppins-Medium.ttf");
+}
 
 @font-face {
-  font-family: 'Lora-Regular';
-  src: url("../src/assets/fonts/Lora-Regular.ttf")
-} 
+  font-family: "Poppins-Regular";
+  src: url("../src/assets/fonts/Poppins-Regular.ttf");
+}
 
 @font-face {
-  font-family: 'Lora-Medium';
-  src: url("../src/assets/fonts/Lora-Medium.ttf")
-} 
+  font-family: "Lora-Regular";
+  src: url("../src/assets/fonts/Lora-Regular.ttf");
+}
 
 @font-face {
-  font-family: 'Lora-Bold';
-  src: url("../src/assets/fonts/Lora-Bold.ttf")
-} 
+  font-family: "Lora-Medium";
+  src: url("../src/assets/fonts/Lora-Medium.ttf");
+}
 
 @font-face {
-  font-family: 'Lora-SemiBold';
-  src: url("../src/assets/fonts/Lora-SemiBold.ttf")
-}  
+  font-family: "Lora-Bold";
+  src: url("../src/assets/fonts/Lora-Bold.ttf");
+}
 
 @font-face {
   font-family: 'Poppins-Regular';
