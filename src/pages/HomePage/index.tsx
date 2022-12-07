@@ -17,7 +17,7 @@ export default function Index() {
           alt="backgroundImage"
           className=" w-full flex flex-col h-full justify-center items-center"
         />
-        <div className="absolute flex items-center justify-center flex-col inset-0 ">
+        <div className="absolute flex h-screen items-center justify-center flex-col inset-0 ">
           <div>
             <img src={dove} alt="dove" className="my-4" />
           </div>
@@ -26,8 +26,8 @@ export default function Index() {
               WE HELP YOU GET THINGS DONE
             </h3>
           </div>
-          <div>
-            <h1 className="text-white font-Poppins-Bold text-7xl">
+          <div className=" py-1 " >
+            <h1 className="text-white font-Poppins-Bold text-6xl">
               GOD GIVES US POWER
             </h1>
           </div>
