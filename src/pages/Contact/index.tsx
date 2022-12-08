@@ -1,56 +1,46 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import UpcomingEvents from "../HomePage/components/UpcomingEvents";
-import backgroundImage from "../../assets/images/Background Image.png";
-import dove from "../../assets/images/dove 1.png";
 import Footer from "../../components/Footer";
 import Form from "./components/Form";
 import HeroSection from "../../components/HeroSection";
-
+import map from "../../assets/images/Rectangle 35.png";
 const index = () => {
   return (
-    <section> 
-      <HeroSection title="GOD GIVES US POWER" /> 
-      {/* <div className="relative">
-        <Navbar />
-        <img
-          src={backgroundImage}
-          alt="backgroundImage"
-          className=" w-full flex flex-col h-full justify-center items-center"
-        />
-        <div className="absolute flex items-center justify-center flex-col inset-0 ">
+    <section>
+      <HeroSection title="GOD GIVES US POWER" />
+
+      <Form />
+      <div className=" w-full flex ">
+        <div className="flex max-w-[1200px] mx-auto justify-around pt-[80px]">
           <div>
-            <img src={dove} alt="dove" className="my-4" />
-          </div>
-          <div>
-            <h3 className="text-white font-Poppins-Medium">
-              WE HELP YOU GET THINGS DONE
-            </h3>
-          </div>
-          <div>
-            <h1 className="text-white font-Poppins-Bold text-7xl">
-              GOD GIVES US POWER
-            </h1>
-          </div>
-          <div>
-            <p className="text-white font-Poppins-Regular leading-6">
-              Jesus is holy, loving, and worthy of all our worship and devotion.
-              <br />
-              You will feel heaven with us. Join us and praise the Lord Jesus.
+            <h4 className="font-Poppins-Medium text-[24px]">Address:</h4>
+            <p className="font-Poppins-Regular text-justify text-[14px] w-[318px] h-[232px] mt-2 ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+              porttitor suspendisse dui lacus pellentesque purus eu risus in.
+              Quis volutpat et pellentesque ut purus.
             </p>
           </div>
           <div>
-            <button
-              className="text-white h-[45px] mt-10 px-8 rounded font-Poppins-Regular font-thin "
-              style={{ backgroundColor: "#B83A3A" }}
-            >
-              View Sermons
-            </button>
+            <h4 className="font-Poppins-Medium text-center text-[24px]">
+              Email:
+            </h4>
+            <p className="font-Poppins-Regular text-center text-[14px] w-[318px] h-[232px] mt-2">
+              gospelwealthembassyint@gmail.com
+            </p>
+          </div>
+          <div>
+            <h4 className="font-Poppins-Medium text-right text-[24px]">
+              Phone:
+            </h4>
+            <p className="font-Poppins-Regular text-right text-[14px] w-[318px] h-[232px] mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit
+              ullamcorper eu phasellus fringilla scelerisque metus tempus eu.
+            </p>
           </div>
         </div>
-        <UpcomingEvents />
-      </div> */}
-      <Form />
+      </div>
+      <div className="-mt-16">
+        <img src={map} alt="map" />
+      </div>
       <Footer />
     </section>
   );
