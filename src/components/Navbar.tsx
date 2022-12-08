@@ -15,7 +15,7 @@ const Navbar = () => {
               <a href="/">HOME</a>
             </li>
             <li className="mr-6">
-              <a href="/sermonpage">SERMONS</a>
+              <a href="/sermon">SERMONS</a>
             </li>
             <li className="mr-6 flex items-center ">
               <a href="#">LIVE STREAM</a>
@@ -25,7 +25,7 @@ const Navbar = () => {
               <a href="/about">ABOUT US</a>
             </li>
             <li className="mr-6">
-              <a href="#">GALLERY</a>
+              <a href="/gallery">GALLERY</a>
             </li>
             <li className="mr-6">
               <a href="#">CONTACT</a>

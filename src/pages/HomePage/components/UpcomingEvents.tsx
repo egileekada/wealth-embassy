@@ -8,7 +8,7 @@ const UpcomingEvents = () => {
         <div className="flex bg-[#F0F0F0] w-fit px-8 h-full rounded-tl rounded-bl items-center">
           <img src={calendar} alt="calender" className="" />
           <div className=" ml-1 " >
-            <h4 className="  font-Poppins-Regular text-[25px]">
+            <h4 className="  font-Poppins-Regular text-[20px]">
               Upcoming event
             </h4>
             <p className="text-[15px] font-Poppins-Regular">

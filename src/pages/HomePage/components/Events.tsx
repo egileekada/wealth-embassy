@@ -6,9 +6,9 @@ import Date20 from "../../../assets/images/Date (1).png";
 
 const Events = () => {
   return (
-    <section className="flex flex-col items-center justify-center pb-14 pt-28 bg-slate-500">
+    <section className="flex flex-col items-center justify-center pb-24 pt-28 bg-slate-500">
       <div className=" mb-8 ">
-        <h1 className="text-white font-Poppins-SemiBold text-6xl text-center ">UPCOMING EVENTS</h1>
+        <h1 className="text-white font-Poppins-SemiBold text-[45px] text-center ">UPCOMING EVENTS</h1>
         <p className="text-white text-center font-Poppins-Regular font-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus nulla
           praesent sem

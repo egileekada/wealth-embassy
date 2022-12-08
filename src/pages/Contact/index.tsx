@@ -5,11 +5,13 @@ import backgroundImage from "../../assets/images/Background Image.png";
 import dove from "../../assets/images/dove 1.png";
 import Footer from "../../components/Footer";
 import Form from "./components/Form";
+import HeroSection from "../../components/HeroSection";
 
 const index = () => {
   return (
-    <section>
-      <div className="relative">
+    <section> 
+      <HeroSection title="GOD GIVES US POWER" /> 
+      {/* <div className="relative">
         <Navbar />
         <img
           src={backgroundImage}
@@ -47,7 +49,7 @@ const index = () => {
           </div>
         </div>
         <UpcomingEvents />
-      </div>
+      </div> */}
       <Form />
       <Footer />
     </section>

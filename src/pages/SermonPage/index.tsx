@@ -5,10 +5,12 @@ import backgroundImage from "../../assets/images/Background Image.png";
 import dove from "../../assets/images/dove 1.png";
 import Sermons from "./components/Sermons";
 import Footer from "../../components/Footer";
+import HeroSection from "../../components/HeroSection";
 
 const sermonpage = () => {
   return (
-    <section>
+    <section> 
+      <HeroSection title="GOD GIVES US POWER" />
       <div className="relative">
         <Navbar />
         <img

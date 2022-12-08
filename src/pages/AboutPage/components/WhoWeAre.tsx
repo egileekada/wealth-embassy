@@ -6,12 +6,12 @@ import Footer from "../../../components/Footer";
 
 const WhoWeAre = () => {
   return (
-    <section className="items-center text-center justify-center pt-60">
-      <p className="font-Poppins-Regular text-[#B83A3A] text-[24px]">
+    <section className="items-center text-center justify-center">
+      <p className="font-Poppins-Medium text-[#B83A3A] text-[24px]">
         ABOUT GOSPEL WEALTH EMBASSY
       </p>
-      <p className="pb-24 text-[70px] font-Lora-Medium">Who We Are</p>
-      <p className="font-Poppins-Regular text-[24px] pb-20 text-center">
+      <p className="pb-8 text-[45px] font-Lora-Medium">Who We Are</p>
+      <p className="font-Poppins-Regular text-[16px] max-w-[1000px] mx-auto pb-20 text-center">
         We believe in the dual nature of the church, that is the body of christ
         invinsible and visible. The both are one and it is the body of christ.
         We are the church as a person and also the genenral gathering of
@@ -25,16 +25,16 @@ const WhoWeAre = () => {
           <img src={Rectangle23} alt="" />
         </div>
         <div className="absolute flex items-center w-[250px] h-[72px] left-[520px] bottom-[370px] text-white">
-          <p className="text-[48px] font-Poppins-SemiBold">Our Vision</p>
+          <p className="text-[45px] font-Poppins-SemiBold">Our Vision</p>
         </div>
         <div className="absolute flex items-center justify-center flex-col inset-0">
-          <p className="text-white text-[48px] h-[122px] w-[1055px] pb-58 font-Lora-Medium text-center">
+          <p className="text-white text-[24px] max-w-[1000px] pb-58 font-Lora-Medium text-center">
             To wipe humanity’s tears by reaching their physical, social, and
             spiritual needs via the gospel and poer of God.
           </p>
         </div>
-        <div>
-          <p className=" absolute bottom-[120px] left-[431px] font-Poppins-Semibold text-[30px] text-center text-white leading-10">
+        <div className=" absolute bottom-[120px] w-full " >
+          <p className="  font-Poppins-Semibold text-[30px] text-center text-white leading-10">
             Gospel Wealth Embassy International
           </p>
         </div>
