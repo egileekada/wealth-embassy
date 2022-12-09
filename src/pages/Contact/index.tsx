@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../../components/Footer";
 import FormComponent from "./components/FormComponent";
 import HeroSection from "../../components/HeroSection";
-import map from "../../assets/images/Rectangle35.png";
+import map from "../../assets/images/Rectangle 35.png";
+import Bible from "../../assets/images/Rectangle 27.png";
+import phone from "../../assets/images/phone.png";
 const index = () => {
   return (
     <section>
@@ -38,8 +40,37 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className="-mt-16">
-        <img src={map} alt="map" />
+      <div className="relative mb-36">
+        <div className="-mt-16">
+          <img src={map} alt="map" />
+        </div>
+        <p className="font-Poppins-SemiBold absolute text-[24px] bottom-5 pl-8 text-white">
+          PORT HACOURT,<span className="text-[#EAA904]"> RIVERS</span>.
+        </p>
+      </div>
+      <div className="relative">
+        <img src={Bible} alt="bible" />
+        <div className="bg-[#B83A3A] absolute w-[339px] h-[400px] text-white items-center justify-center flex flex-col rounded-xl bottom-1/2 ml-20">
+          <img src={phone} alt="phone" />
+          <p className="font-Poppins-SemiBold text-[32px] my-4">Call Us</p>
+          <p className="font-Poppins-Regular text-[15px] mb-4">
+            684 west College St. Sun City, USA.
+          </p>
+          <p className="font-Poppins-Regular text-[15px] mb-4">
+            +2349077601780
+          </p>
+          <p className="font-Poppins-Regular text-[15px]">
+            gospelwealthembassyint@gmail.com
+          </p>
+        </div>
+        <div className="flex flex-col ml-20 absolute left-96 bottom-96">
+          <p className="text-[48px] text-[#B83A3A] font-Poppins-SemiBold text-left">
+            GET IN TOUCH
+          </p>
+          <p className="text-white text-[32px] font-Poppins-Regular text-left">
+            Don't hesistate to contact us
+          </p>
+        </div>
       </div>
       <Footer />
     </section>
