@@ -1,14 +1,14 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import Form from "./components/Form";
+import FormComponent from "./components/FormComponent";
 import HeroSection from "../../components/HeroSection";
-import map from "../../assets/images/Rectangle 35.png";
+import map from "../../assets/images/Rectangle35.png";
 const index = () => {
   return (
     <section>
       <HeroSection title="GOD GIVES US POWER" />
 
-      <Form />
+      <FormComponent />
       <div className=" w-full flex ">
         <div className="flex max-w-[1200px] mx-auto justify-around pt-[80px]">
           <div>

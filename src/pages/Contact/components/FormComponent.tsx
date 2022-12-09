@@ -1,6 +1,6 @@
 import React from "react";
 
-const Form = () => {
+const FormComponent = () => {
   return (
     <div className="items-center justify-center w-full flex flex-col mt-20">
       <p className="font-Poppins-Medium text-[40px]">
@@ -48,4 +48,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormComponent;
