@@ -36,7 +36,7 @@ const Sermons = () => {
         Sermons
       </div>
       <div className=" w-full flex flex-col items-center mt-10 " > 
-        <div className=" max-w-[1200px] grid grid-cols-4 px-12 gap-y-10 gap-6 " > 
+        <div className=" max-w-[1200px] grid grid-cols-1 lg:grid-cols-4 px-6 lg:px-12 gap-y-10 gap-6 " > 
           {Information.map((item: any, index: any) => {
             return( 
               <div className=" w-full " >

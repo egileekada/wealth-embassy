@@ -3,7 +3,7 @@ import calendar from "../../../assets/images/calendar.png";
 
 const UpcomingEvents = () => {
   return (
-    <section className="relative w-full flex justify-center ">
+    <section className="relative w-full hidden lg:flex justify-center ">
       <div style={{boxShadow: "1px 15px 21px 4px rgba(0, 0, 0, 0.25)"}}  className=" absolute -bottom-20 z-40  flex items-center w-[902px] h-[144px] bg-white rounded ">
         <div className="flex bg-[#F0F0F0] w-fit px-8 h-full rounded-tl rounded-bl items-center">
           <img src={calendar} alt="calender" className="" />

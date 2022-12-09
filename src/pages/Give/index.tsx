@@ -5,7 +5,7 @@ import Give from "./components/Give";
 
 const index = () => {
   return (
-    <div>
+    <div className="w-full " >
       <HeroSection title="GOD GIVES US POWER" />
       <Give />
       <Footer />

@@ -4,12 +4,12 @@ import Phone from "../assets/images/Vector.png";
 
 const Footer = () => {
   return (
-    <footer className=" w-full pt-[105px]  ">
-      <div className="flex justify-around pb-[42px]  ">
-        <img src={Logo} alt="logo" className="w-[148px] my-auto h-auto" />
+    <footer className=" w-full pt-[105px] ">
+      <div className="flex lg:flex-row flex-col lg:justify-around  lg:px-0 px-6 pb-[42px]  ">
+        <img src={Logo} alt="logo" className=" w-[148px] lg:my-auto h-auto" />
         <div>
-          <h4 className="font-Poppins-Medium text-[24px]">Address</h4>
-          <p className="font-Poppins-Regular text-justify text-[14px] w-[318px] h-[232px] mt-2 ">
+          <h4 className="font-Poppins-Medium text-[24px] lg:mt-0 mt-8 ">Address</h4>
+          <p className="font-Poppins-Regular text-left lg:text-justify text-[14px] lg:w-[318px] lg:h-[232px] mt-2 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget
             rhoncus volutpat faucibus enim vitae ac egestas. Nisl a vitae ornare
             dictum a ut purus felis. Est id odio at ac in elementum non. Est
@@ -21,7 +21,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h4 className="font-Poppins-Medium text-[24px]">Main Links</h4>
+          <h4 className="font-Poppins-Medium text-[24px]  lg:mt-0 mt-4 ">Main Links</h4>
           <ul className="mt-2 text-sm ">
             <li>Home</li>
             <li className=" my-3 ">About</li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-Poppins-Medium text-[24px]">Contact</h4>
+          <h4 className="font-Poppins-Medium text-[24px] lg:mt-0 mt-4 ">Contact</h4>
           <ul>
             <li className=" text-sm my-3 ">addressline xxxxxxxxxxxxxxx</li>
             <li className=" text-sm my-3 ">addressline xxxxxxxxxxxxxxx</li>
@@ -55,7 +55,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#B83A3A] text-white font-Poppins-Regular text-sm text-center py-3">
+      <div className="bg-[#B83A3A] text-white font-Poppins-Regular text-xs lg:text-sm text-center py-3">
         Designed by <span className="font-Poppins-SemiBold">ICOWEB AGENCY</span>
       </div>
     </footer>

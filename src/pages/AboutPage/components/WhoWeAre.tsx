@@ -6,12 +6,12 @@ import Footer from "../../../components/Footer";
 
 const WhoWeAre = () => {
   return (
-    <section className="items-center text-center justify-center">
-      <p className="font-Poppins-Medium text-[#B83A3A] text-[24px]">
+    <section className=" text-center ">
+      <p className="font-Poppins-Medium px-6 lg:px-0  text-[#B83A3A] text-[24px]">
         ABOUT GOSPEL WEALTH EMBASSY
       </p>
-      <p className="pb-8 text-[45px] font-Lora-Medium">Who We Are</p>
-      <p className="font-Poppins-Regular text-[18px] max-w-[1000px] mx-auto pb-20 text-center">
+      <p className="pb-8 text-[45px] px-6 lg:px-0  font-Lora-Medium">Who We Are</p>
+      <p className="font-Poppins-Regular px-6 lg:px-0  text-[18px] max-w-[1000px] mx-auto pb-20 text-left lg:text-center">
         We believe in the dual nature of the church, that is the body of christ
         invinsible and visible. The both are one and it is the body of christ.
         We are the church as a person and also the genenral gathering of
@@ -20,15 +20,16 @@ const WhoWeAre = () => {
         the sovereign sacrifice of our Lord Jesus Christ.
       </p>
 
-      <div className="relative">
+      <div className="relative  ">
         <div>
-          <img src={Rectangle23} alt="" />
+          <img src={Rectangle23} className="lg:h-auto h-[520px] object-cover"  alt="" />
         </div>
-        <div className="absolute flex items-center w-[250px] h-[72px] left-[520px] bottom-[370px] text-white">
-          <p className="text-[45px] font-Poppins-SemiBold">Our Vision</p>
-        </div>
+        {/* <div className="absolute flex items-center lg:w-[250px] w-full inset-x-0 h-[72px] lg:left-[520px] bottom-[370px] text-white">
+          
+        </div> */}
         <div className="absolute flex items-center justify-center flex-col inset-0">
-          <p className="text-white text-[30px] max-w-[1000px] py-6 font-Lora-Medium text-center">
+          <p className=" text-white text-3xl lg:text-left text-center lg:text-[45px] font-Poppins-SemiBold">Our Vision</p>
+          <p className="text-white lg:text-[30px] lg:max-w-[1000px] py-6 font-Lora-Medium text-center">
             To wipe humanity’s tears by reaching their physical, social, and
             spiritual needs via the gospel and poer of God.
           </p>
@@ -42,7 +43,7 @@ const WhoWeAre = () => {
           </p>
         </div> */}
       </div>
-      <div className="text-left items-center justify-center max-w-[1000px] p-20">
+      <div className="text-left items-center lg:px-0 px-6 pt-8 lg:pt-0 justify-center lg:max-w-[1000px] lg:p-20">
         <div>
           <p className="font-Lora-Medium text-[30px]">Our Believes</p>
           <p className="font-Poppins-Regular text-[18px] pb-10">

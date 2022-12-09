@@ -22,7 +22,7 @@ function App() {
         <Route path="/event" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="livestream" element={<LiveStream />} />
-        <Route path="give" element={<Give />} />
+        <Route path="/give" element={<Give />} />
       </Routes>
     </Router>
   );

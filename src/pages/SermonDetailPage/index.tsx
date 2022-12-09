@@ -6,14 +6,14 @@ const SermonSingle = () => {
     <section>
       <div className=" relative ">
         <img src={sermonBg} alt="sermon" />
-        <button className="font-Poppins-Medium text-[60px] h-[96px] w-[268px] text-center absolute bg-[#B83A3A] text-white top-[374px] left-[100px]">
+        <button className="font-Poppins-Medium text-[60px] h-[96px] w-[268px] text-center lg:block hidden absolute bg-[#B83A3A] text-white top-[374px] left-[100px]">
           Sermon
         </button>
       </div> 
-      <div className=" w-full flex flex-col " > 
+      <div className=" w-full flex flex-col lg:px-0 px-6 " > 
         <div className=" max-w-[1000px] mx-auto  " > 
           <div className="  flex flex-col  ">
-            <p className="text-[35px] font-Poppins-Bold  mt-20">
+            <p className="lg:text-[35px] text-3xl font-Poppins-Bold  mt-20">
               The secrets of Growth
             </p>
             <p className="font-Poppins-SemiBold text-[20px] leading-9  mt-6">

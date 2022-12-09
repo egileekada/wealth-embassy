@@ -3,8 +3,8 @@ import Photo from "../../../assets/images/pngwing.png"
 
 export default function Schedules() {
     return (
-        <div className=' w-full relative py-20 flex items-center flex-col ' >
-            <img src={Photo} alt="photo" className=" absolute left-0 -z-10 top-0 " />
+        <div className=' w-full relative py-20 hidden lg:flex items-center flex-col ' >
+            <img src={Photo} alt="photo" className=" absolute left-0 lg:flex hidden -z-10 top-0 " />
             <p className=' font-Poppins-SemiBold text-[40px] text-center ' >CHURCH SCHEDULES</p>
             <div className=' mt-4 w-[888px] py-4 border-t border-[#000] relative z-20 ' >
                 <div style={{boxShadow: "4px 4px 10px 0px #00000040"}} className=' w-full my-8 font-Poppins-Regular bg-white rounded-full flex items-center h-[55px] ' >

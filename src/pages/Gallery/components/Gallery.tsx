@@ -36,8 +36,8 @@ const Gallery = () => {
   ]
 
   return (
-    <div className="items-center justify-center w-full px-20 font-Poppins-ExtraBold"> 
-      <div className='container w-screen pb-10 ' >
+    <div className="items-center justify-center w-full lg:px-20 font-Poppins-ExtraBold"> 
+      <div className='container w-screen pb-10 lg:flex hidden ' >
         {/* <LatestWork /> */}
         {Images.map((item: any, index: any) => {
           return( 
@@ -47,16 +47,18 @@ const Gallery = () => {
             </figure> 
           )
         })}
-      </div> 
+      </div>  
       <div className=' w-full lg:hidden px-4 pb-10 ' >
-          <div className='containermobile w-full pb-10 ' >
-              {/* <LatestWork /> */}
-              <figure>
-                  <img src="/images/Card/Variant2.png" id='img' alt="one" />
-                  {/* <figcaption><a href="#">1</a></figcaption> */}
-              </figure> 
-          </div> 
-        </div> 
+        {/* <LatestWork /> */}
+        {Images.map((item: any, index: any) => {
+          return( 
+            <figure key={index} >
+                <img src={item.image} id='img' alt={index} />
+                {/* <figcaption><a href="#">1</a></figcaption> */}
+            </figure> 
+          )
+        })}
+      </div>  
     </div>
   );
 };

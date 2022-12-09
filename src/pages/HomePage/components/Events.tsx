@@ -6,9 +6,9 @@ import Date20 from "../../../assets/images/Date (1).png";
 
 const Events = () => {
   return (
-    <section className="flex flex-col items-center justify-center pb-24 pt-28 bg-slate-500">
+    <section className="flex flex-col items-center justify-center pb-24 pt-28 lg:px-0 px-6 bg-slate-500">
       <div className=" mb-8 ">
-        <h1 className="text-white font-Poppins-SemiBold text-[45px] text-center ">UPCOMING EVENTS</h1>
+        <h1 className="text-white font-Poppins-SemiBold text-3xl lg:text-[45px] text-center ">UPCOMING EVENTS</h1>
         <p className="text-white text-center font-Poppins-Regular font-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus nulla
           praesent sem
@@ -16,8 +16,8 @@ const Events = () => {
           turpis tincidunt. Amet a.
         </p>
       </div>
-      <div className="flex">
-        <div className="w-[546px]  bg-white">
+      <div className="flex lg:flex-row flex-col">
+        <div className="lg:w-[546px] w-full bg-white">
           <div className=" relative w-full h-[214px] " > 
             <img src={Date28} className="absolute top-[17px] left-5"  alt="date" />
             <img src={flier1} className="w-full h-full object-cover " alt="date" />
@@ -47,8 +47,8 @@ const Events = () => {
             </p>
           </div>
         </div>
-        <div className="w-[546px]  bg-white mx-5 relative">
-          <div> 
+        <div className="lg:w-[546px] w-full bg-white lg:mt-0 mt-12 lg:mx-5 relative">
+          <div className=" relative w-full h-[214px] " > 
             <img src={Date20} alt="" className="absolute  top-[17px] left-5" />
             <img src={flier2} alt="" className="w-full h-full object-cover "  />
           </div>
