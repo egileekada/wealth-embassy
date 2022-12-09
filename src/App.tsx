@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import Contact from "./pages/Contact";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
+import Give from "./pages/Give";
 import HomePage from "./pages/HomePage";
 import LiveStream from "./pages/LiveStream";
 import SermonDetailPage from "./pages/SermonDetailPage";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/event" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="livestream" element={<LiveStream />} />
+        <Route path="give" element={<Give />} />
       </Routes>
     </Router>
   );
