@@ -21,7 +21,7 @@ const Newsletter = () => {
           <img src={Mail}  className="w-[25px]" alt="mail" />
         </button>
       </div>
-      <div className=" lg:mt-0 mt-8 lg:ml-0 ml-auto lg:absolute right-12 flex items-center " >
+      <div className=" lg:mt-0 mt-8 lg:ml-0  lg:absolute right-12 flex items-center " >
         <img src={FaceBook}  className="w-[15px] mx-1" alt="mail" />
         <img src={Twitter}  className="w-[25px] mx-1" alt="mail" />
         <img src={Youtube}  className="w-[25px] mx-1" alt="mail" />

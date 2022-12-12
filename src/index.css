@@ -47,6 +47,10 @@
   src: url("../src/assets/fonts/Poppins-Regular.ttf")
 } 
 
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 #img {
   max-width: 100%;

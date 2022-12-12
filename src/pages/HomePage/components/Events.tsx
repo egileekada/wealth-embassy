@@ -3,8 +3,12 @@ import flier1 from "../../../assets/images/Rectangle 12 (1).png";
 import Date28 from "../../../assets/images/Date.png";
 import flier2 from "../../../assets/images/Rectangle 12 (2).png";
 import Date20 from "../../../assets/images/Date (1).png";
+import { useNavigate } from "react-router-dom";
 
 const Events = () => {
+
+  const navigate = useNavigate()
+
   return (
     <section className="flex flex-col items-center justify-center pb-24 pt-28 lg:px-0 px-6 bg-slate-500">
       <div className=" mb-8 ">
@@ -18,7 +22,7 @@ const Events = () => {
       </div>
       <div className="flex lg:flex-row flex-col">
         <div className="lg:w-[546px] w-full bg-white">
-          <div className=" relative w-full h-[214px] " > 
+          <div  onClick={()=> navigate("/eventdetail")}  className=" cursor-pointer relative w-full h-[214px] " > 
             <img src={Date28} className="absolute top-[17px] left-5"  alt="date" />
             <img src={flier1} className="w-full h-full object-cover " alt="date" />
           </div>
@@ -48,7 +52,7 @@ const Events = () => {
           </div>
         </div>
         <div className="lg:w-[546px] w-full bg-white lg:mt-0 mt-12 lg:mx-5 relative">
-          <div className=" relative w-full h-[214px] " > 
+          <div onClick={()=> navigate("/eventdetail")}  className=" cursor-pointer relative w-full h-[214px] " > 
             <img src={Date20} alt="" className="absolute  top-[17px] left-5" />
             <img src={flier2} alt="" className="w-full h-full object-cover "  />
           </div>
@@ -76,6 +80,7 @@ const Events = () => {
           </div>
         </div>
       </div>
+      <button onClick={()=> navigate("/event")} className=" font-Poppins-Bold text-white text-xl mx-auto mt-14 " >Know More</button>
     </section>
   );
 };

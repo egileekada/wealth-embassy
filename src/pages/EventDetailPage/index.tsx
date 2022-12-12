@@ -2,27 +2,27 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import sermonBg from "../../assets/images/Rectangle 16.png";
 import Footer from "../../components/Footer";
-const SermonSingle = () => {
+const EventDetail = () => {
 
   const navigate = useNavigate()
 
   return (
     <section>
-      <div className=" relative ">
-        <img src={sermonBg} alt="sermon" />
-        <button onClick={()=> navigate(-1)} className=" absolute top-8 left-12 bg-black bg-opacity-25 rounded-full w-10 flex justify-center items-center h-10 pr-1 " >
+      <div className=" relative h-[80vh] lg:h-auto ">
+        <img src={sermonBg} className="  h-[80vh] object-cover "  alt="sermon" />
+        <button onClick={()=> navigate(-1)} className=" absolute top-8 left-6 lg:left-12 bg-black bg-opacity-25 rounded-full w-10 flex justify-center items-center h-10 pr-1 " >
           <svg width="15"  viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8873 2.8375L12.6623 0.625L0.299805 13L12.6748 25.375L14.8873 23.1625L4.7248 13L14.8873 2.8375V2.8375Z" fill="white"/>
           </svg>
         </button>
-        <button className="font-Poppins-Medium text-[60px] h-[96px] w-[268px] text-center lg:block hidden absolute bg-[#B83A3A] text-white top-[374px] left-[100px]">
-          Sermon
+        <button onClick={()=> navigate("/event")} className="font-Poppins-SemiBold text-[40px] h-[65px] w-[198px] text-center lg:block absolute bg-[#B83A3A] text-white bottom-12 left-6 lg:left-[100px]">
+          Event
         </button>
       </div> 
       <div className=" w-full flex flex-col lg:px-0 px-6 " > 
         <div className=" max-w-[1000px] mx-auto  " > 
           <div className="  flex flex-col  ">
-            <p className="lg:text-[35px] text-3xl font-Poppins-Bold  mt-20">
+            <p className="lg:text-[35px] lg:text-left text-center text-3xl font-Poppins-Bold  mt-20">
               The secrets of Growth
             </p>
             <p className="font-Poppins-SemiBold text-[20px] leading-9  mt-6">
@@ -76,4 +76,4 @@ const SermonSingle = () => {
   );
 };
 
-export default SermonSingle;
+export default EventDetail;
