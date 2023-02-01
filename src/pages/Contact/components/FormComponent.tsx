@@ -2,11 +2,11 @@ import React from "react";
 
 const FormComponent = () => {
   return (
-    <div className="items-center justify-center w-full flex lg:px-0 px-6 flex-col mt-20">
-      <p className="font-Poppins-Bold text-[24px] lg:text-left text-center lg:text-[40px]">
+    <div className="items-center justify-center w-full flex flex-col mt-20">
+      <p className="font-Poppins-Bold text-[24px] lg:text-left text-center lg:px-0 px-6 lg:text-[40px]">
         CALL US OR FILL THE FORM
       </p>
-      <p className="text-[16px] font-Poppins-Medium text-center lg:w-[400px]">
+      <p className="text-[16px] font-Poppins-Medium text-center lg:w-[400px]  lg:px-0 px-6">
         We’d love to hear from you! Feel free to send us any questions you may
         have. We are happy to answer them.
       </p>

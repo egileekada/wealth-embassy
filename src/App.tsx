@@ -12,6 +12,8 @@ import LiveStream from "./pages/LiveStream";
 import SermonDetailPage from "./pages/SermonDetailPage";
 import SermonPage from "./pages/SermonPage";
 import ScrollToTop from "./ScrollToTop";
+import Login from "./admin/AdminLogin";
+import Dashboard from "./admin/Dashboard";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/admin-login" element={<Login />} />
           <Route path="/sermondetail" element={<SermonDetailPage />} />
           <Route path="/sermon" element={<SermonPage />} />
           <Route path="/eventdetail" element={<EventDetailPage />} />
@@ -30,6 +33,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="livestream" element={<LiveStream />} />
           <Route path="/give" element={<Give />} />
+          <Route path="/dashboard" element={<Dashboard />} >
+
+          </Route>
         </Routes>
       </Router>
     </>
