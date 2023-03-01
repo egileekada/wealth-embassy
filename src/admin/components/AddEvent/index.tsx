@@ -29,9 +29,7 @@ export default function AddEvent() {
         }
 
         setImage(e.target.files[0]);  
-    }  
-
-    console.log(image);
+    }   
 
     // formik
     const formik = useFormik({
@@ -69,7 +67,7 @@ export default function AddEvent() {
 
             const response = await handleAddEvent(formik.values, image)  
 
-            if(response?.status === 200){
+            if(response?.status === 201 || response?.status === 200){
                 toast({
                     title: response?.data?.message,
                     position: "bottom",

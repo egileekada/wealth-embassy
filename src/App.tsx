@@ -14,6 +14,9 @@ import SermonPage from "./pages/SermonPage";
 import ScrollToTop from "./ScrollToTop";
 import Login from "./admin/AdminLogin";
 import Dashboard from "./admin/Dashboard";
+import DashboardPage from "./pages/DashboardPage";
+import EditSermon from "./admin/components/EditSermon";
+import AdminGallery from "./admin/components/AdminGallery";
 
 function App() {
   return (
@@ -33,8 +36,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="livestream" element={<LiveStream />} />
           <Route path="/give" element={<Give />} />
-          <Route path="/dashboard" element={<Dashboard />} >
-
+          <Route path="/dashboard" element={<DashboardPage />} >
+            <Route path="/dashboard/" element={<Dashboard />} />
+            <Route path="/dashboard/sermon" element={<EditSermon />} />
+            <Route path="/dashboard/gallery" element={<AdminGallery />} />
           </Route>
         </Routes>
       </Router>

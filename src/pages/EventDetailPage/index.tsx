@@ -2,14 +2,28 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import sermonBg from "../../assets/images/Rectangle 16.png";
 import Footer from "../../components/Footer";
-const EventDetail = () => {
+import { IUser, UserContext } from "../../context/userContext";
+const EventDetail = () => { 
 
   const navigate = useNavigate()
+  const [data, setData] = React.useState({} as any)
+
+  const userContext: IUser = React.useContext(UserContext); 
+
+  React.useEffect(()=> {
+    if(userContext.eventData) {
+      setData(userContext.eventData)
+      console.log(userContext.eventData);
+      
+    } else {
+      navigate("/sermon")
+    }
+  },[])
 
   return (
     <section>
       <div className=" relative h-[80vh] lg:h-auto ">
-        <img src={sermonBg} className="  h-[80vh] object-cover "  alt="sermon" />
+        <img src={data?.photo} className="  h-[80vh] object-cover "  alt="sermon" />
         <button onClick={()=> navigate(-1)} className=" absolute top-8 left-6 lg:left-12 bg-black bg-opacity-25 rounded-full w-10 flex justify-center items-center h-10 pr-1 " >
           <svg width="15"  viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8873 2.8375L12.6623 0.625L0.299805 13L12.6748 25.375L14.8873 23.1625L4.7248 13L14.8873 2.8375V2.8375Z" fill="white"/>
@@ -23,14 +37,15 @@ const EventDetail = () => {
         <div className=" max-w-[1000px] mx-auto  " > 
           <div className="  flex flex-col  ">
             <p className="lg:text-[35px] lg:text-left text-center text-3xl font-Poppins-Bold  mt-20">
-              The secrets of Growth
+              {data?.event_title}
             </p>
             <p className="font-Poppins-SemiBold text-[20px] leading-9  mt-6">
               Jeremiah T.T. Williams / Ag 11, 2021 / Gospel Wealth Embassy Int.
             </p>
           </div>
           <p className=" max-w-[1000px] font-Poppins-Regular text-[16px] leading-9 mt-4 text-left">
-            I've been on vacation these weeks. I haven't preached in so long, I told
+            {data?.event_details}
+            {/* I've been on vacation these weeks. I haven't preached in so long, I told
             one of my boys that I may preach like Paul. And sometime he just
             preached all night. My son said, ''Yeah, but one fellow went to sleep in
             the window and fell out of the window and was killed.'' I said, ''Yeah,
@@ -66,7 +81,7 @@ const EventDetail = () => {
               Let's pray together. ''Father, we're here in this time to do business
               with Thee. Cut through our mind, our heart, our prejudices, our
               attitudes or anything that would keep us fro
-            </p>
+            </p> */}
           </p>
         </div>
       </div>

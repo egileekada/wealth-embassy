@@ -14,10 +14,11 @@ export default function AddSermon() {
     const [image, setImage] = React.useState('');   
     const [imageFile, setImageFile] = React.useState('');  
     const loginSchema = yup.object({ 
-        event_title: yup.string().required('Required'),
-        event_date: yup.string().required('Required'),
-        event_time: yup.string().required('Required'),
-        event_details: yup.string().required('Required'),
+        title: yup.string().required('Required'),
+        content: yup.string().required('Required'),
+        teacher: yup.string().required('Required'),
+        sermon_date: yup.string().required('Required'),
+        sermon_time: yup.string().required('Required'),
     }) 
 
 
@@ -68,7 +69,7 @@ export default function AddSermon() {
 
             const response = await handleAddSermon(formik.values, image)  
 
-            if(response?.status === 200){
+            if(response?.status === 201 || response?.status === 200){
                 toast({
                     title: response?.data?.message,
                     position: "bottom",

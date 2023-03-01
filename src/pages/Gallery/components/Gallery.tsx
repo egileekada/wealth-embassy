@@ -5,6 +5,7 @@ import Three from "../../../assets/images/Gallery/3.png"
 import Four from "../../../assets/images/Gallery/4.png"
 import Five from "../../../assets/images/Gallery/5.png"
 import Six from "../../../assets/images/Gallery/6.png"
+import { getData } from "../../../services";
 
 const Gallery = () => {
   
@@ -35,9 +36,25 @@ const Gallery = () => {
     },
   ]
 
+  const [data, setData] = React.useState({} as any)  
+  React.useEffect(() => { 
+    
+    (async () => {
+        try { 
+        const response = await getData("gallery/photos"); 
+          setData(response?.data);  
+          // setLoading(false)
+          console.log(response?.data);
+          
+        } catch (err) {
+          console.error("Error occured");
+        } 
+    })(); 
+  }, []); 
+
   return (
     <div className="items-center justify-center w-full lg:px-20 font-Poppins-ExtraBold"> 
-      <div className='container w-screen pb-10 lg:flex hidden ' >
+      <div className='container w-screen gap-4 pb-10 lg:flex hidden ' >
         {/* <LatestWork /> */}
         {Images.map((item: any, index: any) => {
           return( 

@@ -1,30 +1,48 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export default function NavbarAdmin() {
 
     const navigate = useNavigate()
-    const [tab, setTab] =React.useState("dashboard")
+    const location = useLocation();
+    const [tab, setTab] =React.useState("home")
+
+    React.useEffect(()=> {
+        if(location.pathname === "/dashboard") {
+            setTab("home")
+        } else {
+            setTab(location.pathname)
+        }
+    },[])
+
+    const clickHandler =(item: any)=> {
+        navigate(item)
+        if(item === "/dashboard") {
+            setTab("home")
+        } else {
+            setTab(item)
+        }
+    } 
 
     return (
         <div className=' w-full bg-white py-4 flex items-center justify-around ' >
-            <button className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("dashboard") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
+            <button onClick={()=> clickHandler("/dashboard")} className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("home") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
                 <svg className=' stroke-current mr-3 ' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="4" y="5.59982" width="16" height="14.4" rx="1" stroke="#0042F1" stroke-width="1.2"/>
-                    <path d="M8.79993 4V7.2" stroke="#0042F1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M15.2001 4V7.2" stroke="#0042F1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4 10.4002H20" stroke="#0042F1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="4" y="5.59982" width="16" height="14.4" rx="1" stroke-width="1.2"/>
+                    <path d="M8.79993 4V7.2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.2001 4V7.2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 10.4002H20" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 Event
             </button>
-            <button className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("sermons") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
+            <button onClick={()=> clickHandler("/dashboard/sermon")} className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("sermon") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
                 <svg className=' stroke-current mr-3 ' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.077 14.4C18.8783 14.934 18.6173 15.4459 18.2975 15.9246C17.4877 17.1366 16.3367 18.0812 14.99 18.639C13.6434 19.1968 12.1616 19.3427 10.732 19.0583C9.30238 18.774 7.98922 18.0721 6.95854 17.0414C5.92786 16.0107 5.22596 14.6976 4.9416 13.268C4.65724 11.8384 4.80318 10.3566 5.36098 9.00995C5.91878 7.66331 6.86338 6.51232 8.07533 5.70252C8.55403 5.38267 9.06595 5.12171 9.59999 4.92303"  stroke-width="1.2" stroke-linecap="round"/>
                     <path d="M15.0615 4.60896C14.3996 4.3348 13.7053 4.15137 12.9974 4.06242C12.4494 3.99356 12 4.44772 12 5L12 11C12 11.5523 12.4477 12 13 12L19 12C19.5523 12 20.0064 11.5506 19.9376 11.0026C19.8486 10.2947 19.6652 9.60043 19.391 8.93853C18.989 7.96793 18.3997 7.08602 17.6569 6.34315C16.914 5.60028 16.0321 5.011 15.0615 4.60896Z"  stroke-width="1.2" stroke-linejoin="round"/>
                 </svg>
                 Sermons
             </button>
-            <button className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("gallery") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
+            <button onClick={()=> clickHandler("/dashboard/gallery")} className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("gallery") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
                 <svg className=' fill-current mr-3 ' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 19V12C13 11.4477 13.4477 11 14 11H19C19.5523 11 20 11.4477 20 12V19C20 19.5523 19.5523 20 19 20H14C13.4477 20 13 19.5523 13 19Z" fill="#B5BFC9"/>
                     <path d="M13 8V5C13 4.44772 13.4477 4 14 4H19C19.5523 4 20 4.44772 20 5V8C20 8.55228 19.5523 9 19 9H14C13.4477 9 13 8.55228 13 8Z" fill="#B5BFC9"/>
@@ -33,7 +51,7 @@ export default function NavbarAdmin() {
                 </svg>
                 Gallery
             </button>
-            <button className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
+            <button className={` flex px-3 text-sm py-2 items-center rounded-lg font-Poppins-Medium ${tab.includes("profile") ? "bg-[#F7F8FC] text-[#0042F1]  ": " text-[#B5BFC9"} ` }>
                 <svg className=' stroke-current mr-3 ' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 20C20 18.4087 19.1571 16.8826 17.6569 15.7574C16.1566 14.6321 14.1217 14 12 14C9.87827 14 7.84344 14.6321 6.34315 15.7574C4.84286 16.8826 4 18.4087 4 20"  stroke-width="1.2"/>
                     <circle cx="12" cy="8" r="4"  stroke-width="1.2"/>
