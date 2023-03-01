@@ -37,13 +37,14 @@ const Gallery = () => {
   ]
 
   const [data, setData] = React.useState({} as any)  
+  const [loading, setLoading] = React.useState(true)  
   React.useEffect(() => { 
     
     (async () => {
         try { 
         const response = await getData("gallery/photos"); 
           setData(response?.data);  
-          // setLoading(false)
+          setLoading(false)
           console.log(response?.data);
           
         } catch (err) {
@@ -53,31 +54,37 @@ const Gallery = () => {
   }, []); 
 
   return (
-    <div className="items-center justify-center w-full lg:px-20 font-Poppins-ExtraBold"> 
-      <div className='container w-screen gap-4 pb-10 lg:flex hidden ' >
-        {/* <LatestWork /> */}
-        {data.map((item: any, index: any) => {
-          return( 
-            <figure key={index} >
-                <img src={item.photo} id='img' alt={index} />
-                {/* <figcaption><a href="#">1</a></figcaption> */}
-            </figure> 
-          )
-        })}
-      </div>  
-      <div className=' w-full lg:hidden px-4 pb-10 ' >
-        {/* <LatestWork /> */}
-        {data.map((item: any, index: any) => {
-          return( 
-            <figure key={index} >
-                <img src={item.photo} id='img' alt={index} />
-                {/* <figcaption><a href="#">1</a></figcaption> */}
-            </figure> 
-          )
-        })}
-      </div>  
-    </div>
+    <>
+      {!loading && ( 
+        <div className="items-center justify-center w-full lg:px-20 font-Poppins-ExtraBold"> 
+          <div className='container w-screen gap-4 lg:grid hidden grid-cols-4 pb-10 ' >
+            {/* <LatestWork /> */}
+            {data.map((item: any, index: any) => {
+              return( 
+                <figure key={index} >
+                    <img src={item.photo} id='img' alt={index} />
+                    {/* <figcaption><a href="#">1</a></figcaption> */}
+                </figure> 
+              )
+            })}
+          </div>  
+          <div className=' w-full lg:hidden px-4 pb-10 ' >
+            {/* <LatestWork /> */}
+            {data.map((item: any, index: any) => {
+              return( 
+                <figure key={index} >
+                    <img src={item.photo} id='img' alt={index} />
+                    {/* <figcaption><a href="#">1</a></figcaption> */}
+                </figure> 
+              )
+            })}
+          </div>  
+        </div>
+      )}
+    </>
   );
 };
 
-export default Gallery;
+// pampay 9550095901 jenifer 3500
+
+export default Gallery; 

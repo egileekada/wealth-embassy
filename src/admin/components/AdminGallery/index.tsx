@@ -16,19 +16,24 @@ export default function Index() {
 
         const files = e.target.files
 
-        for (var i = 0; i < files.length; i++) {
-            const clone = [...imageFiles, files[i]];
-            setImageFiles(clone); 
-        }
+        // for (var i = 0; i < files.length; i++) {
+        //     const clone = [...imageFiles, files[i]];
+        //     setImageFiles(clone); 
+        // }
 		if (e.target.files[0]) {
 			const filesArray: any = Array.from(e.target.files).map((file: any) => URL.createObjectURL(file)); 
+			const files: any = Array.from(e.target.files).map((file: any) =>file); 
             
 			setSelectedFiles((prevImages: any) => prevImages.concat(filesArray));
+            setImageFiles(files); 
 			Array.from(e.target.files).map(
 				(file: any) => URL.revokeObjectURL(file) // avoid memory leak
 			);
         }
+
+        
     };
+    console.log(imageFiles);
 
 
     const files = (index: any, photo: any) => { 
