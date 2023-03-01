@@ -70,6 +70,25 @@ export function useAddSermonCallback() {
     }     
   }
   return { handleAddSermon }
+} 
+
+
+
+export function useLiveVideoCallback() {
+  const handleLiveVideo = async (credentials: any): Promise<any> => {   
+    try{ 
+        const response = await axios.post('sermons/live-video', credentials,
+        {
+          headers: {'Content-Type': 'application/json',
+          Authorization : `Bearer ${localStorage.getItem('token')}`
+        }, 
+        }); 
+        return response       
+    } catch(err: any) { 
+      return err?.response    
+    }     
+  }
+  return { handleLiveVideo }
 }  
  
 export function useUpdateSermonCallback() {
