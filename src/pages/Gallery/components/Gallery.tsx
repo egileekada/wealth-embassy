@@ -56,10 +56,10 @@ const Gallery = () => {
     <div className="items-center justify-center w-full lg:px-20 font-Poppins-ExtraBold"> 
       <div className='container w-screen gap-4 pb-10 lg:flex hidden ' >
         {/* <LatestWork /> */}
-        {Images.map((item: any, index: any) => {
+        {data.map((item: any, index: any) => {
           return( 
             <figure key={index} >
-                <img src={item.image} id='img' alt={index} />
+                <img src={item.photo} id='img' alt={index} />
                 {/* <figcaption><a href="#">1</a></figcaption> */}
             </figure> 
           )
@@ -67,10 +67,10 @@ const Gallery = () => {
       </div>  
       <div className=' w-full lg:hidden px-4 pb-10 ' >
         {/* <LatestWork /> */}
-        {Images.map((item: any, index: any) => {
+        {data.map((item: any, index: any) => {
           return( 
             <figure key={index} >
-                <img src={item.image} id='img' alt={index} />
+                <img src={item.photo} id='img' alt={index} />
                 {/* <figcaption><a href="#">1</a></figcaption> */}
             </figure> 
           )

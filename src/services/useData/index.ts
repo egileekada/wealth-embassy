@@ -113,3 +113,21 @@ export function useAddGalleryCallback() {
   }
   return { handleAddGallery }
 }  
+
+export function useDeleteSermonCallback() {
+  const handleDeleteSermon = async (credentials: any): Promise<any> => {   
+    
+    try{ 
+        const response = await axios.delete('sermons/'+credentials,
+        {
+          headers: {'Content-Type': 'application/json',
+          Authorization : `Bearer ${localStorage.getItem('token')}`
+        }, 
+        }); 
+        return response       
+    } catch(err: any) { 
+      return err?.response    
+    }     
+  }
+  return { handleDeleteSermon }
+}  
