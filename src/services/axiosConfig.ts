@@ -1,7 +1,7 @@
 import axios from "axios";
 let baseURL = process.env.NEXT_PUBLIC_BASE_URL
   ? process.env.NEXT_PUBLIC_BASE_URL
-  : "https://api.gospelwealthembassy.org/api/";
+  : https://rccg-api-b43b21fd7c4c.herokuapp.com/api/";
 // let token;
 
 // token = localStorage.getItem("token")+"";
